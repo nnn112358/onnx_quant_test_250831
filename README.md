@@ -1,4 +1,4 @@
-# YOLOモデル テスト・評価フレームワーク
+# YOLOモデル量子化 テスト
 
 YOLOモデルのテスト、ONNX変換、量子化、性能評価を行う包括的なフレームワークです。
 
@@ -14,12 +14,6 @@ YOLOモデルのテスト、ONNX変換、量子化、性能評価を行う包括
 ## プロジェクト構造
 
 ```
-├── model_convert/              # モデル変換ユーティリティ
-│   ├── yolo11n_nms.onnx       # NMS付きフルYOLO11nモデル
-│   ├── yolo12n_nms.onnx       # NMS付きフルYOLO12nモデル
-│   ├── yolo12_onnx_export.py  # YOLO12からONNXへの変換器
-│   ├── yolo12_cut_onnx.py     # YOLO12モデル分割器
-│   └── ...
 ├── yolo11_onnx_export.py      # YOLO11からONNXへの変換器
 ├── yolo11_cut_onnx.py         # YOLO11モデル分割器
 ├── yolo11_onnx_inference.py   # 分離モデル用推論エンジン
@@ -29,7 +23,6 @@ YOLOモデルのテスト、ONNX変換、量子化、性能評価を行う包括
 ├── output.jpg                 # サンプル推論結果
 ├── *.json                     # JSON形式の検出結果
 ├── *.onnx                     # ONNXモデルファイル
-├── CLAUDE.md                  # 開発ガイダンス
 └── README.md                  # このファイル
 ```
 

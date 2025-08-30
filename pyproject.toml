@@ -1,0 +1,17 @@
+[project]
+name = "250831-yolo-map-test"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=2.3.2",
+    "onnx>=1.19.0",
+    "onnx-simplifier>=0.4.36",
+    "onnxoptimizer>=0.3.13",
+    "onnxruntime>=1.22.1",
+    "onnxsim>=0.4.36",
+    "onnxslim>=0.1.65",
+    "opencv-python>=4.11.0.86",
+    "ultralytics>=8.3.189",
+]
